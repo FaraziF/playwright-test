@@ -1,0 +1,216 @@
+- page: 'Admin Exploratory & Functionality'
+  features:
+    adminExploratory:
+      Dashbaord page loading and element verification: true
+      Product page loading and element verification: true
+      Category page loading and element verification: true
+      Order page loading and element verification: true
+      Brand page loading and element verification: true
+      Payout page loading and element verification: true
+      Subsctiption page loading and element verification: true
+      Vendor page loading and element verification: true
+      Customer page loading and element verification: true
+      Design page loading and element verification: true
+      General settings page loading and element verification: true
+      Team settings page loading and element verification: true
+      Payment settings page loading and element verification: true
+      Payout settings page loading and element verification: true
+      Shipping settings page loading and element verification: true
+      Notification settings page loading and element verification: true
+      Tax settings page loading and element verification: true
+      SEO settings page loading and element verification: true
+      Policies settings page loading and element verification: true
+    adminFunctionality:
+      Go to Dashboard: true
+      Create New Category @cc: true
+      Edit Category @ce: true
+      Delete Category @cd: true
+      Create New Brand @bc: true
+      Edit Brand @be: true
+      Delete Brand @db: true
+      Create New Standard Product @pc-s: true
+      Edit Product @pe: true
+      Delete Product @pd: true
+      Subscription Create @sc @subs: true
+      Edit Subscription @se @subs: true
+      Delete Subscription @sd @subs: true
+      Tax Class CRUD @tax: false
+      Tax Rate Add For Entire Country @tax: false
+      Different Tax Rate For State, City & Zip @tax: false
+      invited new team member and register by invitation link: false
+
+- page: 'Coupon'
+  features:
+    vendor:
+      Coupon Create, Update and Delete With Validation: true
+
+- page: 'Order'
+  features:
+    customer:
+      Customer Order: true
+
+- page: 'Product Bulk Edit'
+  features:
+    admin:
+      bulk edit products and validate changes: true
+
+- page: 'Product Collections'
+  features:
+    admin:
+      Create a new collection: true
+      Edit an existing collection: true
+      Delete a collection: true
+
+- page: 'Vendor Onboarding'
+  features:
+    vendor:
+      Complete vendor onboard process: true
+
+- page: 'Product'
+  features:
+    vendor:
+      Create a new product: true
+
+- page: 'Login'
+  features:
+    customer:
+      Login with email: false
+      Forgot password: false
+      Login with google: false
+
+- page: 'Registration'
+  features:
+    customer:
+      Registration with email: false
+      Registration with google: false
+
+- page: 'Logout'
+  features:
+    customer:
+      Logout: false
+
+- page: 'Security'
+  features:
+    customer:
+      Without login try to access my account: false
+
+- page: 'Dashboard'
+  features:
+    customer:
+      Personal profile page validate: false
+      Default address page validate: false
+      Preview first recent order details: false
+
+- page: 'Orders'
+  features:
+    customer:
+      All tab(All, Paid, Unpaid, Refunded, Awaiting Shipment, Completed) validate: false
+      Preview order details: false
+      Order pagination validate and move to next page: false
+
+- page: 'Downloads'
+  features:
+    customer:
+      Download digital product file: false
+      Downloadable product pagination validate and move to next page: false
+
+- page: 'Review'
+  features:
+    customer:
+      Create a new review: false
+      Pending review and Review history validate: false
+      Review pagination validate and move to next page: false
+
+- page: 'Account Details'
+  features:
+    customer:
+      Personal profile edit: false
+
+- page: 'Password & Security'
+  features:
+    customer:
+      Update password: false
+
+- page: 'Addresses'
+  features:
+    customer:
+      Add new address: false
+      Edit address: false
+      Delete address: false
+
+- page: 'Search'
+  features:
+    customer:
+      Search product: false
+      Category based product search: false
+
+- page: 'Shop'
+  features:
+    customer:
+      Product shorting: false
+      Filter by price: false
+      Average rating: false
+      Availability: false
+      Product pagination validate and move to next page: false
+
+- page: 'Store List'
+  features:
+    customer:
+      Store pagination validate and move to next page: false
+      Filters by store name: false
+      Preview store details: false
+
+- page: 'Individual Store'
+  features:
+    customer:
+      Reviews counting matching in store list page and store details page: false
+      Chat now button validate and option validate to chat: false
+      Social share button validate and option validate to share: false
+      Product search: false
+      Product sorting: false
+      Product view(Grid and List) validate: false
+      View more product appear: false
+      Reviews validate with pagination: false
+      About store validate: false
+
+- page: 'Category'
+  features:
+    customer:
+      All category appear: false
+      Category pagination validate and move to next page: false
+
+- page: 'Individual Product'
+  features:
+    customer:
+      Share product button validate and option validate to share: false
+      Review option validate: false
+      Sold by validate: false
+      Quantity validate: false
+      Add to cart validate: false
+      Description tab validate: false
+      Reviews tab validate: false
+      Related products validate: false
+      Frequently bought together products validate: false
+      Add to cart and popup Successfully added to your cart validate: false
+      You also maybe interested in validate: false
+
+- page: 'Cart'
+  features:
+    customer:
+      Cart summary validate: false
+      Apply coupon code validate: false
+      Proceed to Checkout validate: false
+      Quantity increment: false
+      Delete product from cart: false
+
+- page: 'Checkout'
+  features:
+    customer:
+      Contact information validate: false
+      Shipping address validate: false
+      Billing address validate: false
+      Order item validate: false
+      Add note validate: false
+      Payment method validate: false
+      Order summary validate: false
+      Place order validate: false

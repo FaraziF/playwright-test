@@ -1,0 +1,348 @@
+- page: 'Dashboard'
+  features:
+    admin:
+      get set up guide: true
+      get today report: true
+      get hourle report: true
+      get todos report: true
+
+- page: 'Product'
+  features:
+    admin:
+      get all products: true
+      get all products filter by pagination: true
+      get all published products: true
+      get all published products filter by pagination: true
+      get all draft products: true
+      get all draft products filter by pagination: true
+      search individual all products: true
+      Edit product: true
+      Get products category filter: true
+      Get Standard products type filter: true
+      Get Digital products type filter: true
+      Get in stock products filter: true
+      Get out of stock products filter: true
+      Get on Backorder products filter: true
+      Get low stock products filter: true
+      Get unmanaged products filter: true
+    vendor:
+      Get all products: true
+      search individual products: true
+      Edit Product: true
+      Delete Product: false
+      get published products: true
+      get draft products: true
+      get pagination products: true
+
+- page: 'Category & Attributes'
+  features:
+    admin:
+      Get all category: true
+      Edit category: true
+      Create attribute: true
+      Update attribute: true
+      Delete attribute: false
+      Delete Category: true
+
+- page: 'Brands'
+  features:
+    admin:
+      get all brands: true
+      create a new brand: true
+      pagination filter brand: true
+      search brand: true
+      edit brand: true
+      delete brand: true
+
+- page: 'Order'
+  features:
+    admin:
+      get all orders: true
+      get all completed orders: true
+      get all processing orders: true
+      get all pending orders: true
+      get all failed orders: true
+      get all canceled orders: true
+      get all refunded orders: true
+      get pagination filter order: true
+    customer:
+      Add To Cart: true
+      create order: true
+
+- page: 'Individual Order'
+  features:
+    admin:
+      get specific order: true
+      search order no: true
+      update shipping address: true
+      update billing address: true
+      put on hold order: true
+      remove on hold order: true
+      cancel order: false
+      charge order: true
+      get payment id: true
+      create shipment: true
+      refund order: true
+    customer:
+      get all orders: true
+      get Paid orders: true
+      get unpaid orders: true
+      get refunded orders: true
+      get awaiting shipment orders: true
+      get completed orders: true
+      get customer individual order details: false
+      get order pagination: true
+
+- page: 'Vendor Order'
+  features:
+    vendor:
+      get all orders: true
+      get all completed orders: true
+      get all processing orders: true
+      get all pending orders: true
+      get all failed orders: true
+      get all canceled orders: true
+      get all refunded orders: true
+    customer:
+      Add To Cart: true
+      create order: true
+      get vendor order details: true
+      search order no: true
+      update shipping address: true
+      update billing address: true
+      put on hold order: true
+      remove on hold order: true
+      cancel order: false
+      charge order: true
+      get payment id: true
+      create shipment: true
+      refund order: true
+
+- page: 'Subscription'
+  features:
+    admin:
+      get all subscription: true
+      get published subscription: true
+      get draft subscription: true
+      get pagination subscription: true
+      create a subscription: true
+      edit subscription: true
+      save draft subscription: true
+      delete subscription: true
+
+- page: 'Payout'
+  features:
+    admin:
+      get all payouts: true
+      get pending payouts: true
+      get completed payouts: true
+      get canceled payouts: true
+      get rejected payouts: true
+      get upcomming payouts: true
+      get search vendor payouts: true
+      get pagination payouts: true
+    vendor:
+      Get Payouts: true
+      Get Payout Summary: true
+      Get Payout Compare Balance: true
+      Get Payout Dashboard Balance: true
+      Get Payout Dashbard Withdraw: true
+      Get Payout Balance in: true
+      Get Payout Withdraw: true
+
+- page: 'Vendor Manage'
+  features:
+    admin:
+      get all vendors: true
+      get pending vendor: true
+      get active vendor: true
+      get inactive vendor: true
+      get vacation vendor: true
+      get Suspended vendor: true
+      get Hold Payout vendor: true
+      get Search vendor: true
+      get pagination vendor: true
+      get vendor individual product: true
+      get individual vendor: true
+      edit individual vendor general settings: true
+      get individual vendor susbcription settings: true
+      edit individual vendor address settings: true
+      edit individual vendor social settings: true
+
+- page: 'Customer Manage'
+  features:
+    admin:
+      get all customers: true
+      get pagination customers data: true
+      get active customers: true
+      get inActive customers: true
+      create a new customer: true
+      search customer: true
+      edit customer: true
+      reset customer password: true
+      deactivate customer: true
+      mark as customer: true
+      unmark as customer: true
+      activate customer: true
+
+- page: 'All Integrations'
+  features:
+    admin:
+      get all integrations: true
+      get live chat: true
+      get mailchimp: true
+      get SMS: true
+      get analytics: true
+      get marketplace migrator: true
+
+- page: 'All Pages'
+  features:
+    admin:
+      get all pages: true
+      create a new page: true
+      search page: true
+      edit page: true
+      delete page: true
+      get pagination page: true
+
+- page: 'All Themes'
+  features:
+    admin:
+      get all themes: true
+
+- page: 'Admin Settings'
+  features:
+    admin:
+      get basic settings: true
+      update marketplace details: true
+      update store visibility: true
+      update units: true
+      get business details settings: true
+      update business details: true
+      get domain settings: true
+      add custom domain: true
+      add refresh custom domain: true
+      edit custom domain: true
+      remove custom domain: true
+      get brand settings: true
+      update brand: true
+      get all team member: true
+      get pagination page team member: true
+      get active team member: true
+      get inactive team member: true
+      get invited team member: true
+      invited new team member: true
+      search team member: true
+      resend invitation invited team member: true
+      remove invited team member: true
+      get plans and bills: true
+      get choose plan: true
+      get Stripe payment: true
+      get paypal payment: true
+      update cash on delivery: true
+      enable test gateway: true
+      get payout settings: true
+      get shipping settings: true
+      get all notification: true
+      enable order confirmation notification: true
+      enable order canceled notification: true
+      enable order refunded notification: true
+      enable shipping confirmation notification: true
+      enable shipping update notification: true
+      get tax summary: true
+      get tax class: true
+      add tax class: true
+      rename tax classes: true
+      delete tax classes: true
+      Create new country tax: true
+      manage same tax country: true
+      maange different tax country: true
+      get edit all tax: true
+      edit state tax country: true
+      delete state tax country: true
+      delete tax country: true
+      get all SEO: true
+      save SEO general: true
+      save social share: true
+      save advance SEO: true
+      save site verification: true
+      get all policies: true
+      get admin policies: true
+      get admin profile: true
+
+- page: 'Reviews'
+  features:
+    customer:
+      get pending reviews: true
+      get review history: true
+
+- page: 'Account'
+  features:
+    customer:
+      get profile: true
+      update profile: true
+
+- page: 'Addresses'
+  features:
+    customer:
+      get addresses: true
+      add new address: true
+      edit addresses: true
+      delete addresses: true
+
+- page: 'Shipping'
+  features:
+    vendor:
+      Get Shipping Preferences: true
+      Save Shipping Preferences: true
+      Get Shipping Profile: true
+      Get Individual Shipping Profile: true
+      Update Individual Shipping Profile: false
+      Update Individual Shipping Weight Rule: false
+      Get Shipping Address: true
+
+- page: 'Coupon'
+  features:
+    vendor:
+      Get all coupon: true
+      Get active coupon: true
+      Get draft coupon: true
+      Get expired coupon: true
+      Create Coupon: true
+      Get individual coupon: true
+      Get search coupon: true
+      Update Coupon: true
+      Delete Coupon: true
+
+- page: 'Vendor Settings'
+  features:
+    vendor:
+      Get basic settings: true
+      Save basic settings: true
+      Get store details settings: true
+      Save store details: true
+      Get default address: true
+      Save default address: true
+      Add New Location: true
+      Update Location: true
+      Delete Location: true
+      get all team member: true
+      get active team member: true
+      get inactive team member: true
+      get invited team member: true
+      invited new team member: true
+      search team member: false
+      edit invited team member: false
+      resend invitation invited team member: true
+      remove invited team member: true
+      Get Gateway: true
+      Get Payment: true
+      Get payout: true
+      Update Automatic Payout: true
+      Update Manual Payout: true
+      Get plans: true
+      Get subscription: true
+      Get live chat: true
+      Enable live chat: true
+      Get profile: true
+      Save profile: true

@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test:all": "npx playwright test tests/api/admin tests/api/vendor tests/api/customer tests/e2e/tests",
-    "test:e2e": "npx playwright test tests/e2e/tests",
+    "test:e2e": "SUMMARY_PATH=true npx playwright test tests/e2e/tests",
     "test:api": "npx playwright test tests/api/admin tests/api/vendor tests/api/customer",
+    "test:coverage": "npx playwright test --project=teardown --reporter=dot",
+    "test:global": "SUMMARY_PATH=true npm run test:e2e && npm run test:api && npm run test:coverage",
     "test:e2e-chromium": "npx playwright test --project=chromium --headed"
   },
   "repository": {
@@ -30,6 +32,7 @@
     "mailslurp-client": "^15.17.2"
   },
   "dependencies": {
+    "js-yaml": "^4.1.0",
     "playwright": "^1.39.0"
   },
   "directories": {

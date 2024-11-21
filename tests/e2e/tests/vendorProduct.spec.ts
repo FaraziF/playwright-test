@@ -1,11 +1,10 @@
-import { test, expect, type Page } from "@playwright/test";
-import { faker } from "@faker-js/faker";
-import { LoginPage } from "../pages/loginPage";
-import { VendorPage } from "../pages/vendorPage";
-import { data, user } from "../../../utils/testdata";
-import { selector } from "../pages/selectors";
-import { Registration } from "../pages/registrationPage";
-
+import { test, expect, type Page } from '@playwright/test';
+import { faker } from '@faker-js/faker';
+import { LoginPage } from '../pages/loginPage';
+import { VendorPage } from '../pages/vendorPage';
+import { data, user } from '../../../utils/testdata';
+import { selector } from '../pages/selectors';
+import { Registration } from '../pages/registrationPage';
 
 // const env = require('../../../env');
 
@@ -13,8 +12,6 @@ import { Registration } from "../pages/registrationPage";
 
 // let page: Page;
 // let vendorPage: any;
-
-
 
 // test.beforeAll(async ({ browser }) => {
 //     // vendorPage = new VendorPage(page);
@@ -33,26 +30,24 @@ import { Registration } from "../pages/registrationPage";
 //     await page.close();
 // });
 
+test.describe('Vendor functional Testing', () => {
+  test.use({ storageState: data.auth.vendorAuthFile });
 
-test.describe("Vendor functional Testing", ()=> {
-    test.use({ storageState: data.auth.vendorAuthFile });
+  let vendorPage: VendorPage;
+  let page: Page;
 
-    let vendorPage: VendorPage;
-    let page: Page;
+  test.beforeAll(async ({ browser }) => {
+    const context = await browser.newContext({});
+    page = await context.newPage();
+    vendorPage = new VendorPage(page);
+  });
 
-    test.beforeAll(async ({ browser }) => {
-        const context = await browser.newContext({});
-        page = await context.newPage();
-        vendorPage = new VendorPage(page);
-    });
+  test.afterAll(async () => {
+    await page.close();
+  });
 
-    test.afterAll(async () => {
-        await page.close();
-    });
-
-    test('Create a new product', async()=>  {
-        // const vendorPage = new VendorPage(page)
-        await vendorPage.createStandardProduct(data.product.standard)
-    })
-})
-
+  test('Create a new product', async () => {
+    // const vendorPage = new VendorPage(page)
+    await vendorPage.createStandardProduct(data.product.standard);
+  });
+});

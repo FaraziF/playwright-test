@@ -4,5 +4,5 @@ import fs from 'fs';
 export type responseBody = any;
 
 export interface comission {
-    _commissionFlatFixed: any;
+  _commissionFlatFixed: any;
 }
